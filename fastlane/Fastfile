@@ -71,6 +71,7 @@ platform :ios do
     update_code_signing_settings(
       use_automatic_signing: false,
       path: ENV['PROJECT_PATH'],
+      team_id: ENV['TEAM_ID'],
       code_sign_identity: ENV['CODE_SIGNING_IDENTITY'],
       targets: update_targets,
       entitlements_file_path:
